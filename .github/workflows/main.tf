@@ -13,4 +13,3 @@ resource "aws_s3_bucket" "gouthambucket" {
     Name        = "Goutham bucket"
     Environment = "Dev"
   }
-}
