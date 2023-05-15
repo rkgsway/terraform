@@ -12,6 +12,9 @@ env:
 ## ...
 jobs:
   terraform:
+    defaults:
+      run:
+        working-directory: $DIR_OF_CHOICE
     if: github.repository != 'hashicorp-education/learn-terraform-github-actions'
     name: "Terraform Plan"
     runs-on: ubuntu-latest
